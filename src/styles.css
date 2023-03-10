@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+/* li.active:after {
+    content: " ";
+    background: #900604;
+    color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    width: 6px;
+    height: 90px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+} */
+    /* You can add global styles to this file, and also import other style files */
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }

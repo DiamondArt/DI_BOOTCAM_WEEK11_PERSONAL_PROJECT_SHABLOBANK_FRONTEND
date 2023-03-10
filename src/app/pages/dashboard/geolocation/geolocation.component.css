@@ -1,0 +1,11 @@
+.map {
+    height: 100%;
+    padding: 0;
+  }
+
+  .container-fluid.map.leaflet-container.leaflet-touch.leaflet-fade-anim.leaflet-grab.leaflet-touch-drag.leaflet-touch-zoom {
+    position: absolute !important;
+    left: 9%;
+    /* top:-20px; */
+    /* height: 500px !important; */
+}

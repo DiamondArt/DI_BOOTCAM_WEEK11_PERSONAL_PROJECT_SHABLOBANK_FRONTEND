@@ -1,0 +1,331 @@
+<app-breadcrumb [pageTitle]="pageTitle" [pageUrl]="pageUrl"></app-breadcrumb>
+<div class="row sortable">
+    <div class="col-xl-3 col-lg-6 mb-4">
+        <div class="card">
+            <div class="card-header p-0 position-relative">
+                <div class="position-absolute handle card-icon">
+                    <i class="simple-icon-shuffle"></i>
+                </div>
+            </div>
+            <div class="card-body d-flex justify-content-between align-items-center">
+                <img src="assets/img/icons/blood-group1.png" alt="" width="40">
+                <h6 class="mb-0">Groupe Sanguin A</h6>
+                <div role="progressbar" class="progress-bar-circle position-relative" data-color="#922c88"
+                    data-trailColor="#d7d7d7" aria-valuemax="100" aria-valuenow="40"
+                    data-show-percent="true">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-lg-6 mb-4">
+        <div class="card">
+            <div class="card-header p-0 position-relative">
+                <div class="position-absolute handle card-icon">
+                    <i class="simple-icon-shuffle"></i>
+                </div>
+            </div>
+            <div class="card-body d-flex justify-content-between align-items-center">
+                <img src="assets/img/icons/blood-group1.png" alt="" width="40">
+                <h6 class="mb-0">Groupe Sanguin B</h6>
+                <div role="progressbar" class="progress-bar-circle position-relative" data-color="#922c88"
+                    data-trailColor="#d7d7d7" aria-valuemax="100" aria-valuenow="64"
+                    data-show-percent="true">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-lg-6 mb-4">
+        <div class="card">
+            <div class="card-header p-0 position-relative">
+                <div class="position-absolute handle card-icon">
+                    <i class="simple-icon-shuffle"></i>
+                </div>
+            </div>
+            <div class="card-body d-flex justify-content-between align-items-center">
+                <img src="assets/img/icons/blood-group1.png" alt="" width="40">
+                <h6 class="mb-0">Groupe Sanguin AB</h6>
+                <div role="progressbar" class="progress-bar-circle position-relative" data-color="#922c88"
+                    data-trailColor="#d7d7d7" aria-valuemax="100" aria-valuenow="75"
+                    data-show-percent="true">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-lg-6 mb-4">
+        <div class="card">
+            <div class="card-header p-0 position-relative">
+                <div class="position-absolute handle card-icon">
+                    <i class="simple-icon-shuffle"></i>
+                </div>
+            </div>
+            <div class="card-body d-flex justify-content-between align-items-center">
+                <img src="assets/img/icons/blood-group1.png" alt="" width="40">
+                <h6 class="mb-0">Groupe Sanguin O</h6>
+                <div role="progressbar" class="progress-bar-circle position-relative" data-color="#922c88"
+                    data-trailColor="#d7d7d7" aria-valuemax="100" aria-valuenow="32"
+                    data-show-percent="true">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Table of poche-->
+<div class="row">
+    <div class="col-lg-12 col-md-12 mb-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="text-zero top-right-button-container">
+                    <button type="button" class="btn btn-primary btn-lg top-right-button mr-1" data-toggle="modal"
+                    data-backdrop="static" data-target="#exampleModalRight">
+                        <img src="assets/img/icons/blood-group.png" width="25" alt="">
+                        <span> Nouveau</span>
+                    </button>
+                </div>
+                <h5 class="card-title">Groupe sanguin A</h5>
+               
+                <!-- <table class="table table-bordered data-table data-tables-pagination responsive nowrap"
+                data-order="[[ 1, &quot;desc&quot; ]]">
+                    <thead>
+                        <tr>
+                            <th scope="col">#Ref</th>
+                            <th scope="col">Groupe</th>
+                            <th scope="col">Donneur</th>
+                            <th scope="col">Statut</th>
+                            <th scope="col">Date de preremption</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row">1</td>
+                            <td>A</td>
+                            <td>Mark</td>
+                            <td>
+                                <div class="w-15 w-sm-100">
+                                    <span class="badge badge-pill badge-primary">Using</span>
+                                </div>
+                            </td>
+                            <td>@mdo</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">2</td>
+                            <td>A</td>
+                            <td>Jacob</td>
+                            <td>
+                                <div class="w-15 w-sm-100">
+                                    <span class="badge badge-pill badge-primary">Using</span>
+                                </div>
+                            </td>
+                            <td>@fat</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">2</td>
+                            <td>A</td>
+                            <td>Jacob</td>
+                            <td>
+                                <div class="w-15 w-sm-100">
+                                    <span class="badge badge-pill badge-info">Stock</span>
+                                </div>
+                            </td>
+                            <td>@fat</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table> -->
+                <table class="data-table data-table-feature">
+                    <thead>
+                        <tr>
+                            <th scope="col">#Ref</th>
+                            <th scope="col">Groupe</th>
+                            <th scope="col">Donneur</th>
+                            <th scope="col">Statut</th>
+                            <th scope="col">Date de preremption</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row">1</td>
+                            <td>A</td>
+                            <td>Mark</td>
+                            <td>
+                                <div class="w-15 w-sm-100">
+                                    <span class="badge badge-pill badge-primary">Using</span>
+                                </div>
+                            </td>
+                            <td>@mdo</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">2</td>
+                            <td>A</td>
+                            <td>Jacob</td>
+                            <td>
+                                <div class="w-15 w-sm-100">
+                                    <span class="badge badge-pill badge-primary">Using</span>
+                                </div>
+                            </td>
+                            <td>@fat</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">2</td>
+                            <td>A</td>
+                            <td>Jacob</td>
+                            <td>
+                                <div class="w-15 w-sm-100">
+                                    <span class="badge badge-pill badge-info">Stock</span>
+                                </div>
+                            </td>
+                            <td>@fat</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Modal add new group sanguin -->
+<div class="modal fade modal-right" id="exampleModalRight" tabindex="-1" role="dialog"
+aria-labelledby="exampleModalRight" aria-hidden="true">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Nouveau enregistrément de stock</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                    <label>Donneur</label>
+                    <span> 
+                        <a class="ml-1 mb-1 text-info" style="font-size:23px" data-toggle="collapse" href="#collapseExample"
+                        role="button" aria-expanded="true" aria-controls="collapseExample">
+                        <i class="simple-icon-plus"></i>
+                    </a> </span>
+                  
+                    <!--Add donater-->
+                    <div class="collapse" id="collapseExample">
+                        <div class="p-4 border mt-4">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h5 class="mb-4">Enregistrer un donneur</h5>
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="inputEmail4">Nom</label>
+                                                <input type="text" class="form-control" id="inputEmail4" placeholder="Nom">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="inputPassword4">Prénom(s)</label>
+                                                <input type="text" class="form-control" id="inputPassword4" placeholder="Prénom(s)">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputAddress">Mail</label>
+                                            <input type="email" class="form-control" id="inputAddress" placeholder="Mail">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputAddress2">Adresse </label>
+                                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="inputCity">Téléphone</label>
+                                                <input type="text" class="form-control" id="inputCity">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="inputState">Nationnalité</label>
+                                                <select id="inputState" class="form-control">
+                                                    <option selected="">Choose...</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary d-block mt-3">Enregistrer</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End add donater-->
+                    <div class="input-group typeahead-container">
+                        <input type="text" class="form-control typeahead" name="query" id="query"
+                            placeholder="Commencez à saisir le nom du donneur..." data-provide="typeahead"
+                            autocomplete="off">
+                        <div class="input-group-append ">
+                            <button type="submit" class="btn btn-primary default">
+                                <i class="simple-icon-magnifier "></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Référence</label>
+                    <input type="text" class="form-control" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label>Details</label>
+                    <textarea placeholder="" class="form-control" rows="2"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Groupe Sanguin</label>
+                    <select class="form-control">
+                        <option label="&nbsp;">&nbsp;</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="AB">AB</option>
+                        <option value="O">O</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Analyses</label>
+                    <select class="form-control select2-multiple" multiple="multiple" data-width="100%">
+                        <option label="&nbsp;">&nbsp;</option>
+                            <option value="Syphilis">Syphilis</option>
+                            <option value="VIH">VIH</option>
+                            <option value="Hépatites B">Hépatites B</option>
+                            <option value="Hépatites C">Hépatites C</option>
+                            <option value="Anti-HTLV1 ">Anti-HTLV1 </option>
+                            <option value="Anti-HTLV2">Anti-HTLV2 </option>
+                            <option value="Paludisme">Paludisme</option>
+                            <option value="Chagas">Chagas</option>
+                    </select>
+                </div>
+                <div class="form-group mb-1">
+                    <label>Date de prélévement</label>
+                    <div class="input-group date">
+                        <input type="text" class="form-control">
+                        <span class="input-group-text input-group-append input-group-addon">
+                            <i class="simple-icon-calendar"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- <div class="form-group">
+                    <label>Status</label>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input"
+                            id="customCheck1">
+                        <label class="custom-control-label"
+                            for="customCheck1">Completed</label>
+                    </div>
+                </div> -->
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-outline-primary"
+                data-dismiss="modal">Annuler</button>
+            <button type="button" class="btn btn-primary">Ajouter</button>
+        </div>
+    </div>
+</div>
+</div>

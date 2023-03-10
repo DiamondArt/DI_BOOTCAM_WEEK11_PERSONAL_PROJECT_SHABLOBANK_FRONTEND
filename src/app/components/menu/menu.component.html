@@ -1,0 +1,26 @@
+<div class="main-menu">
+    <div class="scroll">
+        <ul class="list-unstyled" *ngFor="let menu of menuProperties">
+            
+            <li routerLinkActive="active">
+                <a href="javascript:void(0);" (click)="navigateTo(menu.url)">
+                    <i class="{{menu.icon}}"></i>
+                    <span>{{menu.name}}</span>
+                </a>
+            </li>
+           
+        </ul>
+    </div>
+</div>
+
+<!-- <div class="sub-menu">
+    <div class="scroll" >
+        <ul class="list-unstyled" *ngFor ="let menus of menuProperties"  [attr.data-link]="menus?.url" >
+            <li  class="active" *ngFor="let submenu of menus?.submenu">
+                <a [href]="submenu.url">
+                    <i [ngClass]="submenu.icon"></i> <span class="d-inline-block">{{submenu.name}}</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div> -->
