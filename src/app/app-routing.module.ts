@@ -1,3 +1,4 @@
+import { StocktableComponent } from './pages/stocktable/stocktable.component';
 import { StocksTradingComponent } from './pages/dashboard/stocks-trading/stocks-trading.component';
 import { GeolocationComponent } from './pages/dashboard/geolocation/geolocation.component';
 import { DonorsComponent } from './pages/dashboard/donors/donors.component';
@@ -11,6 +12,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { NotificationComponent } from './pages/dashboard/notification/notification.component';
 
 const routes: Routes = [
+  {
+    path: 'tables',
+    component: StocktableComponent
+  },
   {
     path: 'login',
     component: LoginComponent

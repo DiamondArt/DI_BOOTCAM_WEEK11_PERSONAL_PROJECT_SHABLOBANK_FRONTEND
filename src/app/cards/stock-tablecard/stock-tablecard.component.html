@@ -1,0 +1,78 @@
+
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 mb-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="text-zero top-right-button-container">
+                    <button type="button" class="btn btn-primary btn-lg top-right-button mr-1" data-toggle="modal"
+                    data-backdrop="static" data-target="#exampleModalRight">
+                        <img src="assets/img/icons/blood-group.png" width="25" alt="">
+                        <span> Nouveau</span>
+                    </button>
+                </div>
+                <h5 class="card-title">Groupe sanguin A</h5>
+           
+                <div *ngIf="loader" class="d-flex justify-content-center">
+                    <div class="spinner-border" role="status" >
+                        <span class="sr-only" id="loading">Loading...</span>
+                    </div>
+                </div>
+                <table *ngIf="!loader" class="data-table data-table-feature">
+                    <thead>
+                        <tr>
+                            <th scope="col">#Ref</th>
+                            <th scope="col">Groupe</th>
+                            <th scope="col">Donneur</th>
+                            <th scope="col">Statut</th>
+                            <th scope="col">Date de preremption</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let blood of bloods">
+                            <td scope="row">{{blood.codeRef}}</td>
+                            <td>{{blood.bloodType}}</td>
+                            <td>Mark</td>
+                            <td>
+                                <div class="w-15 w-sm-100">
+                                    <span class="badge badge-pill badge-primary">Using</span>
+                                </div>
+                            </td>
+                            <td>@mdo</td>
+                            <td></td>
+                        </tr>
+                  
+                    </tbody>
+                </table>
+                <table datatable [dtOptions]="dtoptions" [dtTrigger]="dtTrigger" class="table">
+                    <thead class="bg-dark text-white">
+                        <tr>
+                            <th scope="col">#Ref</th>
+                            <th scope="col">Groupe</th>
+                            <th scope="col">Donneur</th>
+                            <th scope="col">Statut</th>
+                            <th scope="col">Date de preremption</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let blood of bloods">
+                            <td scope="row">{{blood.codeRef}}</td>
+                            <td>{{blood.bloodType}}</td>
+                            <td>Mark</td>
+                            <td>
+                                <div class="w-15 w-sm-100">
+                                    <span class="badge badge-pill badge-primary">Using</span>
+                                </div>
+                            </td>
+                            <td>@mdo</td>
+                            <td></td>
+                        </tr>
+                  
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

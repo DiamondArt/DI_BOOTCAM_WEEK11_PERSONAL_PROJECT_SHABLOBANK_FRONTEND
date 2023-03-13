@@ -17,6 +17,12 @@ import { GeolocationComponent } from './pages/dashboard/geolocation/geolocation.
 import { NotificationComponent } from './pages/dashboard/notification/notification.component';
 import { DonorsComponent } from './pages/dashboard/donors/donors.component';
 import { StocksTradingComponent } from './pages/dashboard/stocks-trading/stocks-trading.component';
+import { HttpClientModule } from '@angular/common/http';
+import { StockcardComponent } from './cards/stockcard/stockcard.component';
+import { StockTablecardComponent } from './cards/stock-tablecard/stock-tablecard.component';
+import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer'
+import {DataTablesModule} from 'angular-datatables';
+import { StocktableComponent } from './pages/stocktable/stocktable.component'
 
 @NgModule({
   declarations: [
@@ -33,12 +39,18 @@ import { StocksTradingComponent } from './pages/dashboard/stocks-trading/stocks-
     GeolocationComponent,
     NotificationComponent,
     DonorsComponent,
-    StocksTradingComponent
+    StocksTradingComponent,
+    StockcardComponent,
+    StockTablecardComponent,
+    StocktableComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LeafletModule
+    LeafletModule,
+    HttpClientModule,
+    NgxExtendedPdfViewerModule,
+    DataTablesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

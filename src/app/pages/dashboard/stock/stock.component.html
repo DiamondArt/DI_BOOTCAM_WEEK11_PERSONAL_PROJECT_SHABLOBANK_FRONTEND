@@ -1,7 +1,8 @@
 <app-breadcrumb [pageTitle]="pageTitle" [pageUrl]="pageUrl"></app-breadcrumb>
 <div class="row sortable">
+    <!--app-stockcard [cardTitle]="'Groupe Sanguin A'" [theCallback]="thecallback"></app-stockcard-->
     <div class="col-xl-3 col-lg-6 mb-4">
-        <div class="card">
+        <div class="card" (click)="navigateTo('A')">
             <div class="card-header p-0 position-relative">
                 <div class="position-absolute handle card-icon">
                     <i class="simple-icon-shuffle"></i>
@@ -18,7 +19,7 @@
         </div>
     </div>
     <div class="col-xl-3 col-lg-6 mb-4">
-        <div class="card">
+        <div class="card" (click)="navigateTo('B')">
             <div class="card-header p-0 position-relative">
                 <div class="position-absolute handle card-icon">
                     <i class="simple-icon-shuffle"></i>
@@ -35,7 +36,7 @@
         </div>
     </div>
     <div class="col-xl-3 col-lg-6 mb-4">
-        <div class="card">
+        <div class="card" (click)="navigateTo('AB')">
             <div class="card-header p-0 position-relative">
                 <div class="position-absolute handle card-icon">
                     <i class="simple-icon-shuffle"></i>
@@ -52,7 +53,7 @@
         </div>
     </div>
     <div class="col-xl-3 col-lg-6 mb-4">
-        <div class="card">
+        <div class="card" (click)="navigateTo('O')">
             <div class="card-header p-0 position-relative">
                 <div class="position-absolute handle card-icon">
                     <i class="simple-icon-shuffle"></i>
@@ -70,7 +71,9 @@
     </div>
 </div>
 <!--Table of poche-->
-<div class="row">
+<app-stock-tablecard [loader]="loader" [bloods]="bloods"></app-stock-tablecard>
+
+<!-- <div class="row">
     <div class="col-lg-12 col-md-12 mb-4">
         <div class="card">
             <div class="card-body">
@@ -82,112 +85,17 @@
                     </button>
                 </div>
                 <h5 class="card-title">Groupe sanguin A</h5>
-               
-                <!-- <table class="table table-bordered data-table data-tables-pagination responsive nowrap"
-                data-order="[[ 1, &quot;desc&quot; ]]">
-                    <thead>
-                        <tr>
-                            <th scope="col">#Ref</th>
-                            <th scope="col">Groupe</th>
-                            <th scope="col">Donneur</th>
-                            <th scope="col">Statut</th>
-                            <th scope="col">Date de preremption</th>
-                            <th scope="col">Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td scope="row">1</td>
-                            <td>A</td>
-                            <td>Mark</td>
-                            <td>
-                                <div class="w-15 w-sm-100">
-                                    <span class="badge badge-pill badge-primary">Using</span>
-                                </div>
-                            </td>
-                            <td>@mdo</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td scope="row">2</td>
-                            <td>A</td>
-                            <td>Jacob</td>
-                            <td>
-                                <div class="w-15 w-sm-100">
-                                    <span class="badge badge-pill badge-primary">Using</span>
-                                </div>
-                            </td>
-                            <td>@fat</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td scope="row">2</td>
-                            <td>A</td>
-                            <td>Jacob</td>
-                            <td>
-                                <div class="w-15 w-sm-100">
-                                    <span class="badge badge-pill badge-info">Stock</span>
-                                </div>
-                            </td>
-                            <td>@fat</td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table> -->
-                <table class="data-table data-table-feature">
-                    <thead>
-                        <tr>
-                            <th scope="col">#Ref</th>
-                            <th scope="col">Groupe</th>
-                            <th scope="col">Donneur</th>
-                            <th scope="col">Statut</th>
-                            <th scope="col">Date de preremption</th>
-                            <th scope="col">Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td scope="row">1</td>
-                            <td>A</td>
-                            <td>Mark</td>
-                            <td>
-                                <div class="w-15 w-sm-100">
-                                    <span class="badge badge-pill badge-primary">Using</span>
-                                </div>
-                            </td>
-                            <td>@mdo</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td scope="row">2</td>
-                            <td>A</td>
-                            <td>Jacob</td>
-                            <td>
-                                <div class="w-15 w-sm-100">
-                                    <span class="badge badge-pill badge-primary">Using</span>
-                                </div>
-                            </td>
-                            <td>@fat</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td scope="row">2</td>
-                            <td>A</td>
-                            <td>Jacob</td>
-                            <td>
-                                <div class="w-15 w-sm-100">
-                                    <span class="badge badge-pill badge-info">Stock</span>
-                                </div>
-                            </td>
-                            <td>@fat</td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
+           
+                <div *ngIf="loader" class="d-flex justify-content-center">
+                    <div class="spinner-border" role="status" >
+                        <span class="sr-only" id="loading">Loading...</span>
+                    </div>
+                </div>
+                <app-stock-tablecard [loader]="loader" [bloods]="bloods"></app-stock-tablecard>
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 
 <!--Modal add new group sanguin -->
